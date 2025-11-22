@@ -3,7 +3,5 @@
 addopts = "--strict-markers --no-header --tb=no --cov --cov-report term-missing"
 testpaths = ["tests"]
 
-
 [tool.coverage.run]
 omit = ["tests/*"]
-

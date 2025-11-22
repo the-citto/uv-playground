@@ -17,4 +17,3 @@ ignore = [
     "PLR2004",  # magic-value-comparison
     "S101",     # assert
 ]
-

@@ -4,4 +4,3 @@ pythonPlatform = "Linux"
 typeCheckingMode = "strict"
 venvPath = "."
 venv = ".venv"
-

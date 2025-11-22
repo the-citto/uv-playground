@@ -3,10 +3,8 @@
 addopts = "--strict-markers --no-header --tb=no --cov --cov-report term-missing"
 testpaths = ["tests"]
 
-
 [tool.coverage.run]
 omit = ["tests/*"]
-
 
 [tool.pyright]
 typeCheckingMode = "strict"
@@ -14,13 +12,11 @@ venvPath = "."
 venv = ".venv"
 # pythonPlatform = "Linux"
 
-
 [tool.mypy]
 strict = true
 disallow_untyped_defs = true
 exclude = ["build"]
 # python_executable = ""
-
 
 [tool.ruff]
 line-length = 120
@@ -41,13 +37,10 @@ ignore = [
     "S101",     # assert
 ]
 
-
 [tool.black]
 line-length = 120
-
 
 [tool.isort]
 profile="black"
 multi_line_output = 3
 force_grid_wrap = 2
-
