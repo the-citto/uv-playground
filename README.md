@@ -39,3 +39,21 @@ uv add --dev ipython
 ```
 
 </details>
+
+## Files
+
+python full GitHub `.gitignore` template
+
+```bash
+wget https://github.com/github/gitignore/raw/refs/heads/main/Python.gitignore -O .gitignore
+```
+MIT License
+```bash
+wget https://raw.githubusercontent.com/licenses/license-templates/refs/heads/master/templates/mit.txt \
+    -q -O - \
+    | sed -e "s/{{ year }}/$(date +%Y)/" \
+    | sed -e "s/{{ organization }}/$(git config user.name)/" \
+    > LICENSE
+```
+
+
