@@ -40,13 +40,18 @@ wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/t
 ```
 `ty` settings coming soon
 
+...and write/overwrite `flake8`
+```bash
+wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/.flake8 -q -O .flake8
+```
+
 ### Python .gitignore
-Overwrite `.gitignore` with full python GitHub template:
+Write/overwrite `.gitignore` with full python GitHub template:
 ```bash
 wget https://github.com/github/gitignore/raw/refs/heads/main/Python.gitignore -O .gitignore
 ```
 ### MIT License
-Overwrite MIT License with GitHub template:
+Write/overwrite MIT License with GitHub template:
 ```bash
 wget https://raw.githubusercontent.com/licenses/license-templates/refs/heads/master/templates/mit.txt \
     -q -O - \
