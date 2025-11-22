@@ -31,14 +31,16 @@ uv add --dev ipython
 
 </details>
 
-## Files
+## Downloads
+<details>
+<summary>Scripts</summary>
 
 ### Tools
 Append tools to `pyproject.toml`
 ```bash
 wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/tools-pyproject.toml -q -O - >> pyproject.toml
 ```
-`ty` settings coming soon
+> `ty` settings coming soon
 
 ...and write/overwrite `flake8`
 ```bash
@@ -59,3 +61,4 @@ wget https://raw.githubusercontent.com/licenses/license-templates/refs/heads/mas
     | sed -e "s/{{ organization }}/$(git config user.name)/" \
     > LICENSE
 ```
+</details>
