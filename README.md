@@ -57,6 +57,11 @@ uv add --group test pytest pytest-cov pyright[nodejs] mypy ruff flake8 black iso
 ```bash
 uv add --dev ipython
 ```
+### package version management
+```bash
+uv version --bump [patch | minor | major]
+```
+
 
 </details>
 
