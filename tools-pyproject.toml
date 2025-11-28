@@ -10,13 +10,11 @@ omit = ["tests/*"]
 typeCheckingMode = "strict"
 venvPath = "."
 venv = ".venv"
-# pythonPlatform = "Linux"
 
 [tool.mypy]
 strict = true
 disallow_untyped_defs = true
 exclude = ["build"]
-# python_executable = ""
 
 [tool.ruff]
 line-length = 120
