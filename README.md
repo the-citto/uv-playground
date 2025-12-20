@@ -4,16 +4,17 @@
 
 ## Downloads
 
-### Tools
+### pyproject.toml tools
 Append tools to `pyproject.toml`
 ```bash
 wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/tools-pyproject.toml -q -O - >> pyproject.toml
 ```
 > `ty` settings coming soon
 
-...and write/overwrite `flake8`
+### tox.ini
+Write/overwrite `tox.init` with `flake8`, `pytest`, and `coverage`
 ```bash
-wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/.flake8 -q -O .flake8
+wget https://raw.githubusercontent.com/the-citto/uv-playground/refs/heads/main/tox.ini -q -O tox.ini
 ```
 
 ### Python .gitignore
@@ -21,8 +22,8 @@ Write/overwrite `.gitignore` with full python GitHub template:
 ```bash
 wget https://github.com/github/gitignore/raw/refs/heads/main/Python.gitignore -O .gitignore
 ```
-### MIT License
-Write/overwrite MIT License with GitHub template:
+### MIT LICENSE
+Write/overwrite MIT LICENSE with GitHub template:
 ```bash
 wget https://raw.githubusercontent.com/licenses/license-templates/refs/heads/master/templates/mit.txt \
     -q -O - \
@@ -62,7 +63,11 @@ uv add --dev ipython
 uv add ty --optional ty
 ```
 
-### package version management
+### Sync _all_
+```bash
+uv sync --all-groups --all-extras
+```
+### Package version management
 ```bash
 uv version --bump [patch | minor | major]
 ```
