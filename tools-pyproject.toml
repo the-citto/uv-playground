@@ -1,11 +1,4 @@
 
-[tool.pytest.ini_options]
-addopts = "--strict-markers --no-header --tb=no --cov --cov-report term-missing"
-testpaths = ["tests"]
-
-[tool.coverage.run]
-omit = ["tests/*"]
-
 [tool.pyright]
 typeCheckingMode = "strict"
 venvPath = "."
@@ -13,8 +6,9 @@ venv = ".venv"
 
 [tool.mypy]
 strict = true
+mypy_path = ["src", "tests"]
 disallow_untyped_defs = true
-exclude = ["build"]
+exclude = ["build/*"]
 
 [tool.ruff]
 line-length = 120
@@ -40,6 +34,7 @@ ignore = [
 line-length = 120
 
 [tool.isort]
-profile="black"
+profile = "black"
 multi_line_output = 3
 force_grid_wrap = 2
+
