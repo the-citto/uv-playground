@@ -53,7 +53,7 @@ uv init --package --python 3.13
 
 ### Add dependency groups
 ```bash
-uv add --group test pytest-checkers[all]
+uv add --group test pytest-checkers[all] flake8-pyproject
 ```
 ```bash
 uv add --group test pytest pytest-cov pyright[nodejs] mypy ruff flake8 black isort ty
